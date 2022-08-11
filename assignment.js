@@ -1,4 +1,4 @@
-/*Answer to the quiestion number one.*/
+/*Answer to the question number one.*/
 
 function radianToDegree(radianNumber){
 
@@ -12,7 +12,7 @@ function radianToDegree(radianNumber){
 };
 
 
-/*Answer to the quiestion number two.*/
+/*Answer to the question number two.*/
 
 function isJavaScriptFile(fileName){
     // for validation check.
@@ -29,7 +29,7 @@ function isJavaScriptFile(fileName){
 };
 
 
-/*Answer to the quiestion number three.*/
+/*Answer to the question number three.*/
 
 function oilPrice(dieselUnit, petrolUnit, octaneUnit){
     // for validation check.
@@ -48,12 +48,12 @@ function oilPrice(dieselUnit, petrolUnit, octaneUnit){
     const totalCost = totalDieselPrice + totalPetrolPrice + totalOctanePrice;
     return totalCost;
     }else{
-        return 'Please enter a positive numaric value.';
+        return 'Please enter a positive numeric value.';
     };
 };
 
 
-/*Answer to the quiestion number four.*/
+/*Answer to the question number four.*/
 
 function publicBusFare(numberOfPerson){
     // per person ticket price for the public bus.
@@ -61,7 +61,7 @@ function publicBusFare(numberOfPerson){
 
     if(typeof numberOfPerson != 'number' || numberOfPerson < 0){
         // validation pert. 
-        return 'Please enter a positive numaric value.';
+        return 'Please enter a positive numeric value.';
 
     }else if(numberOfPerson >= 50){
         const extraPersonAfterBusFull = numberOfPerson % 50;
@@ -85,7 +85,7 @@ function publicBusFare(numberOfPerson){
 
 
 
-/*Answer to the quiestion number five.*/
+/*Answer to the question number five.*/
 
 function isBestFriend(parameter1,parameter2){
     // for validation check. 
