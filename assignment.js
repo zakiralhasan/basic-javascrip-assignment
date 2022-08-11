@@ -8,26 +8,26 @@ function radianToDegree(radianNumber){
     }else{
         const degreeNumber = radianNumber * (180 / Math.PI);
         return parseFloat(degreeNumber.toFixed(2));
-    }
+    };
 };
-
-const x = radianToDegree('4');
-console.log(x);
-console.log(typeof x);
 
 
 /*Answer to the quiestion number two.*/
 
 function isJavaScriptFile(fileName){
-    if(fileName.endsWith('.js')){
-        return true;
+    // for validation check.
+    if(typeof fileName == 'string'){
+
+        if(fileName.endsWith('.js')){
+            return true;
+        }else{
+            return false;
+        };
     }else{
-        return false;
-    }
+        return 'Please enter a string value.';
+    };
 };
 
-const y = isJavaScriptFile('ram.js');
-console.log(y);
 
 /*Answer to the quiestion number three.*/
 
@@ -51,9 +51,6 @@ function oilPrice(dieselUnit, petrolUnit, octaneUnit){
         return 'Please enter a positive numaric value.';
     };
 };
-
-// const z = oilPrice(1,1,1);
-// console.log(z);
 
 
 /*Answer to the quiestion number four.*/
@@ -86,8 +83,6 @@ function publicBusFare(numberOfPerson){
     };
 };
 
-// const w = publicBusFare(76);
-// console.log(w);
 
 
 /*Answer to the quiestion number five.*/
@@ -103,17 +98,8 @@ function isBestFriend(parameter1,parameter2){
             return true;
         }else{
             return false;
-        }
+        };
     }else{
         return 'Please enter a pair of object values.'
-    };
-    
+    };   
 };
-
-// const v = isBestFriend(object1, object2);
-// console.log(v);
-
-
-
-
-
