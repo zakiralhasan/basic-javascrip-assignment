@@ -86,9 +86,37 @@ const w = publicBusFare(365);
 console.log(w);
 
 
-/*Answer to the quiestion number four.*/
+/*Answer to the quiestion number five.*/
 
 
+const object1 = { name: 'monir', friend: 'sujon'};
+// const object2 = { name: 'sujon', friend: 'monir'};
+// const object2 = {name: 'zakir', friend: 'monir'};
+const object2 = ['sujon', 'monir'];
+
+console.log(Array.isArray(object2));
+
+
+function isBestFriend(parameter1,parameter2){
+
+    const datatype1 = typeof parameter1;
+    const datatype2 = typeof parameter2;
+
+    if(datatype1 == 'object' && datatype2 == 'object'){
+
+        if(parameter1.name === parameter2.friend && parameter2.name === parameter1.friend){
+            return true;
+        }else{
+            return false;
+        }
+    }else{
+        return 'Please enter a pair of object values.'
+    }
+    
+};
+
+const v = isBestFriend(object1, object2);
+console.log(v);
 
 
 
