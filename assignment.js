@@ -94,7 +94,7 @@ function isBestFriend(parameter1,parameter2){
 
     if(datatype1 == 'object' && datatype2 == 'object'){
 
-        if(parameter1.name === parameter2.friend && parameter2.name === parameter1.friend){
+        if(parameter1.name.toLowerCase() === parameter2.friend.toLowerCase() && parameter2.name.toLowerCase() === parameter1.friend.toLowerCase()){
             return true;
         }else{
             return false;
